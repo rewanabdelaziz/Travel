@@ -1,3 +1,4 @@
+/* normaliz */
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +7,10 @@
     list-style: none;
     scroll-behavior: smooth;
     font-family: 'Lato', sans-serif;
+}
+html {
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar Start */
@@ -432,7 +437,7 @@ body{
     text-align: center;
     background: black;
     color:#f9f9f9;
-    padding-bottom: 0px;
+    padding-bottom: 15px;
 }
 #footer h1{
     font-family: "Sevillana", cursive;
