@@ -37,7 +37,7 @@
     color: white;
     letter-spacing: 1px;
     border-radius: 3px;
-    transition: 0.5s ease;
+    transition: 0.5s ease;  /**ease timing function for: starts slowly **/
 }
 .nav-item .nav-link:hover{
     background: #ffa500;
@@ -86,7 +86,7 @@ body{
     margin-top: 5px;
 }
 .changecontent::after{
-    content: ' ';
+    content: '';
     color: #ffa500;
     text-shadow: 0px 1px 1px black;
     animation: changetext 10s infinite linear;
@@ -114,8 +114,8 @@ body{
 }
 .home .content a{
     padding: 10px;
-    background: white;
-    color: black;
+    background: black;
+    color: white;
     letter-spacing: 2px;
     font-weight: 550;
     border-radius: 5px;
@@ -124,7 +124,6 @@ body{
 }
 .home .content a:hover{
     background: #ffa500;
-    color: white;
 }
 @media (max-width:850px){
     .home{
@@ -200,7 +199,7 @@ body{
 }
 @media (max-width:765px){
     .book{
-        padding: 0;
+        padding: 100px 0px 0px 0px;
     }
     .main-text h1{
         padding: 20px;
@@ -214,7 +213,7 @@ body{
 
 /* Section Packages Start */
 .packages{
-    padding: 100px;
+    padding-top: 100px;
 }
 .main-txt h1{
     font-family: "Sevillana", cursive;
@@ -263,11 +262,12 @@ body{
     border-radius: 5px;
 }
 .card img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* transition: transform 0.3s ease */
+    transition: box-shadow 0.3s ease;
 }
 
 .card img:hover {
-    transform: scale(1.1); /* Increase the size of the image */
+    /* transform: scale(1.1); Increase the size of the image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a drop shadow */
 }
 .card-details {
@@ -275,7 +275,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 60%;
+    height: 100%;
     background-color: rgba(205, 202, 202, 0.9);
     padding: 20px;
     opacity: 0;
@@ -291,6 +291,7 @@ body{
 .card-img{
     width: 100%;
     height: 60%;
+    position: relative;
 }
 .card-img img{
     width: 100%;
@@ -303,7 +304,8 @@ body{
 /* Section Services Start */
 .services{
     background: #f9f9f9;
-    margin-top: 100px;
+    margin-top: 150px;
+    padding-top: 100px;
 }
 .services .card{
     box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
@@ -331,6 +333,7 @@ body{
 /* Section Gallary Start */
 .gallary{
     margin-top: 100px;
+    padding-top: 100px;
 }
 .gallary .card{
     border-radius: 10px;
@@ -342,7 +345,7 @@ body{
     transition: 0.5s;
 }
 .gallary .card img:hover{
-    transform: scale(1.1);
+    transform: scale(1.1);    /* larger 10% */
 }
 /* Section Gallary End */
 
@@ -385,13 +388,19 @@ body{
 }
 @media (max-width:765px){
     .about{
-        padding: 0;
+        padding: 100px 0px 0px 0px;
+    }
+    .main-txt h1{
+        font-size: 50;
     }
 }
 /* About End */
 
 
 /* our team Start */
+.team{
+    padding-top: 100px;
+}
 .row .card .social-links i{
     color: white;
     background-color: #0b0b0b;
@@ -404,10 +413,14 @@ body{
     width: 50%;
 }
 .card-title{
-    font-family: "Sevillana", cursive;
-    font-style: normal;
-    font-size: 50;
+    font-size: 40;
     font-weight: 300;
+}
+.card{
+    margin-top: 50px;
+}
+.team img{
+    background-color: #ffa500;
 }
 /* our team end */
 
