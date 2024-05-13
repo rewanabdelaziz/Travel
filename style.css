@@ -8,10 +8,10 @@
     scroll-behavior: smooth;
     font-family: 'Lato', sans-serif;
 }
-html {
+/* html {
     margin: 0;
     padding: 0;
-}
+} */
 
 /* Navbar Start */
 #navbar{
@@ -421,7 +421,7 @@ body{
     font-size: 40;
     font-weight: 300;
 }
-.card{
+.gallary .card{
     margin-top: 50px;
 }
 .team img{
